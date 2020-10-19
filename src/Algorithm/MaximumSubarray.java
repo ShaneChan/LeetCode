@@ -16,7 +16,7 @@ public class MaximumSubarray {
         return max;
     }
 
-    // 解法2：分治算法
+    // 解法二：分治算法
     public int solution2(int[] nums) {
         if (nums.length == 1) {
             return nums[0];
