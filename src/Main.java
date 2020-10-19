@@ -22,5 +22,15 @@ public class Main {
         System.out.println("maximum is");
         System.out.println(maximumsubarray.solution1(array));
         System.out.println(maximumsubarray.solution2(array));
+        // 链表反转
+        ListNode node1 = new ListNode(1);
+        node1.next = new ListNode(2);
+        while (node1 != null) {
+            System.out.println(node1.val);
+            node1 = node1.next;
+        }
+
+        ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
+        System.out.println(reverseLinkedList.reverseList2(node1));
     }
 }
