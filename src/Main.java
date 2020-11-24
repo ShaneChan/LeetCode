@@ -32,5 +32,13 @@ public class Main {
 
         ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
         System.out.println(reverseLinkedList.reverseList2(node1));
+        ReplicateNum stk = new ReplicateNum();
+        int[] array1 = {1, 2, 3, 3};
+        System.out.println(stk.duplicateNum(array1));
+        String as = new String("leetcode");
+        FirstNotRepeatingChar so = new FirstNotRepeatingChar();
+        System.out.println("===========");
+        int O = so.solution(as);
+        System.out.println(O);
     }
 }
