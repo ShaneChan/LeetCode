@@ -3,25 +3,25 @@ import Algorithm.*;
 public class Main {
     public static void main(String[] args) {
         // 最小栈
-        MinStack minstack = new MinStack();
-        minstack.push(-2);
-        minstack.push(0);
-        minstack.push(-3);
-        minstack.push(-5);
-        System.out.println(minstack.getMin());
-        minstack.pop();
-        System.out.println(minstack.top());
-        System.out.println(minstack.getMin());
+        MinStack minStack = new MinStack();
+        minStack.push(-2);
+        minStack.push(0);
+        minStack.push(-3);
+        minStack.push(-5);
+        System.out.println(minStack.getMin());
+        minStack.pop();
+        System.out.println(minStack.top());
+        System.out.println(minStack.getMin());
         // 链表交点
         // 数组相邻数字相差最大值
-        MaximumGap maximumGap = new MaximumGap();
+        MaximumGap maxiMumGap = new MaximumGap();
         int[] array = {-1, -2};
-        System.out.println(maximumGap.maximumGap(array));
+        System.out.println(maxiMumGap.maximumGap(array));
         // 最大连续子序列
-        MaximumSubarray maximumsubarray = new MaximumSubarray();
+        MaximumSubarray maxiMumSubarray = new MaximumSubarray();
         System.out.println("maximum is");
-        System.out.println(maximumsubarray.solution1(array));
-        System.out.println(maximumsubarray.solution2(array));
+        System.out.println(maxiMumSubarray.solution1(array));
+        System.out.println(maxiMumSubarray.solution2(array));
         // 链表反转
         ListNode node1 = new ListNode(1);
         node1.next = new ListNode(2);
@@ -29,16 +29,22 @@ public class Main {
             System.out.println(node1.val);
             node1 = node1.next;
         }
-
         ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
         System.out.println(reverseLinkedList.reverseList2(node1));
         ReplicateNum stk = new ReplicateNum();
         int[] array1 = {1, 2, 3, 3};
         System.out.println(stk.duplicateNum(array1));
-        String as = new String("leetcode");
-        FirstNotRepeatingChar so = new FirstNotRepeatingChar();
+        String as = "leetcode";
+        FirstNotRepeatingChar firstNotRepeatingChar = new FirstNotRepeatingChar();
         System.out.println("===========");
-        int O = so.solution(as);
+        int O = firstNotRepeatingChar.solution(as);
         System.out.println(O);
+        JumpFloor jumpFloor = new JumpFloor();
+        System.out.println("===========");
+        System.out.println(jumpFloor.solution(44));
+        XOR xor = new XOR();
+        int[] array6 = {1, 1, 2, 2, 3, 3, 4, 4};
+        System.out.println("==========");
+        System.out.println(xor.solution(array6));
     }
 }
