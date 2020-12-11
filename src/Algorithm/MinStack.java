@@ -4,10 +4,13 @@ import java.util.Stack;
 
 // 最小栈
 public class MinStack {
-    private Stack<Integer> stack1 = new Stack<>(); // 栈1用来做原来的栈
-    private Stack<Integer> stack2 = new Stack<>(); // 栈2用来存放出现过的最小值
+    private Stack<Integer> stack1; // 栈1用来做原来的栈
+    private Stack<Integer> stack2; // 栈2用来存放出现过的最小值
 
-    public MinStack() { }
+    public MinStack() {
+        stack1 = new Stack<Integer>();
+        stack2 = new Stack<Integer>();
+    }
 
     public void push(int x) {
         stack1.push(x);
